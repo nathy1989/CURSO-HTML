@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a las listas</title>
+</head>
+
+<body>
+    <!-- Las listas en HTML sirven para listas contenidoen función del tipo de contenido de nuestra lista, tenemos tres tipos:
+    
+        ul-> unordered list: Se utiliza cuando el orden de los elementos no influye (lista de compras) 
+        
+        ol-> ordered list: se utilizan cuando el orden de los elementos es importante (un top 10)
+
+        Cada elemento de la lista se representa con la etiqueta <li> para las etiquetas ul o ol
+    
+        dl-> definition list: se utilizan para hacer una lista de definiciones (diccionario)
+        
+            Cada elemento de una lista de definición lleva 2 etiquetas:
+            dt->definiton term: el termino que vamos a definir
+            dd->defintiion description: la descripción del termino.
+    -->
+
+    <h1>Listas</h1>
+
+    <nav>
+        <ul>
+            <li><a href="#post-1">Post 1</a></li>
+            <li><a href="#post-2">Post 2</a></li>
+            <li><a href="#post-3">Post 3</a></li>
+            <li><a href="#post-4">Post 4</a></li>
+            <li><a href="#post-5">Post 5</a></li>
+        </ul>
+    </nav>
+    
+    <h2>Lista de la compra</h2>
+    <ul>
+        <li>Pan</li>
+        <li>Huevos</li>
+        <li>Leche</li>
+    </ul>
+    <h2>Orden de parendizaje en el desarrollo web</h2>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+
+    <h2>Lenguaje para el desarrollo web</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Lenguaje: es un lenguaje de marcado que se usa para estructurar datos en una página web</dd>
+
+        <dt>CSS</dt>
+        <dd>Cascade Style Sheets: es un lenguaje de diseño que se utiliza para dar estilos al HTML</dd>
+
+        <dt>JavaScript</dt>
+        <dd>Es un lenguaje de programación para dar interactividad a un sitio web</dd>
+    </dl>
+    <!--Atributos a las listas
+        
+        ul ->
+            type: Estilo de los items (disc, square, circle)
+
+        ol ->
+            type: Estilo de numeración (1, A, a, I, i)
+            start: Inicio de la secuencia (un número)
+    -->
+    <h2>Atributos de las listas</h2>
+    <ul type="circle">
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ul>
+
+    <ol type="i" start="9">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+</body>
+</html>

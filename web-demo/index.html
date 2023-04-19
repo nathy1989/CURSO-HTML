@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<!--
+    Enlaces: conocidos también como links, su objetivo es conectar una página web con otra, con un recurso tanto        interno como externo, o con otro sitio web.      
+
+    Tienen el atributo obligatoria href, donde le especificamos la ruta del recurso o sitio que queremos obtener.
+
+    También tiene el atributo target, que configura cómo queremos visualizar el recurso o sitio que solicitamos.
+
+    Rutas absolutas: tienen un protocolo, http o https y son únicas en la red. Se suelen utilizar para rutas externas
+
+    Rutas relativas: pueden ser relativas al punto donde nos encontramos o relativas a la raiz del proyecto.
+
+    NO usan protocolo
+
+    Si el recurso se encuentra en el mismo nivel (en la misma carpeta) pondremos unicamente el nombre del archivo.
+
+    Si necesitamos salir de la carpeta actual usaremos ../ y sepone uno por cada nivel (carpeta) de la que queramos salir.
+
+    Atributos de los enlaces:
+
+    Target: define dónde se abrirá el recurso solicitado. Por norma general siempre que se usan rutas abdsolutas se pondrá como valor: "_blank". El valor por defecto es "_self" (es como no poner nada)
+
+    Download: atributo booleano, sirve para descargar el recurso solicitado. IMPORTANTE el recurso debe estar en tu mismo servidor.
+-->
+
+<body>
+    <h1>Home</h1>
+    <nav>
+        <p><a href="/paginas/blog.html#post-1">Post 1</a></p>
+        <p><a href="/paginas/blog.html#post-2">Post 2</a></p>
+        <p><a href="/paginas/blog.html#post-3">Post 3</a></p>
+        <p><a href="/paginas/blog.html#post-4">Post 4</a></p>
+        <p><a href="/paginas/blog.html#post-5">Post 5</a></p>
+    </nav>
+    <a href="http://google.com" download>Ir a contacto</a>
+    <a href="/assets/images/gato.webp"Download>Descargar gato</a>
+
+    <!--<a href="https://google.com" target="_blank"> Ir a google </a> -->
+</body>
+
+</html>
